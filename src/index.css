@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 214 100% 97%;
+    --foreground: 213 40% 12%;
+
+    --card: 214 100% 97%;
+    --card-foreground: 213 40% 12%;
+
+    --popover: 214 100% 97%;
+    --popover-foreground: 213 40% 12%;
+
+    --primary: 213 94% 42%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 45 100% 51%;
+    --secondary-foreground: 213 40% 12%;
+
+    --muted: 213 20% 94%;
+    --muted-foreground: 213 15% 46%;
+
+    --accent: 45 100% 51%;
+    --accent-foreground: 213 40% 12%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 213 20% 90%;
+    --input: 213 20% 90%;
+    --ring: 213 94% 42%;
+
+    --radius: 0.75rem;
+
+    /* Deep blue palette - derived from brand #0571D3 */
+    --deep-blue: 212 68% 14%;
+    --deep-blue-foreground: 210 30% 96%;
+    --deep-blue-muted: 210 22% 76%;
+    --deep-blue-card: 212 52% 21%;
+    --deep-blue-border: 212 42% 28%;
+
+    --sidebar-background: 213 30% 97%;
+    --sidebar-foreground: 213 40% 12%;
+    --sidebar-primary: 213 94% 42%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 45 100% 51%;
+    --sidebar-accent-foreground: 213 40% 12%;
+    --sidebar-border: 213 20% 90%;
+    --sidebar-ring: 213 94% 42%;
+
+    --font-display: 'Space Grotesk', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --font-hero: 'Space Grotesk', sans-serif;
+
+    --shadow-soft: 0 4px 24px -4px hsl(213 40% 12% / 0.06);
+    --shadow-warm: 0 12px 40px -12px hsl(213 94% 42% / 0.2);
+    --shadow-card: 0 1px 3px hsl(213 40% 12% / 0.04), 0 8px 24px -8px hsl(213 40% 12% / 0.06);
+    --shadow-elevated: 0 20px 60px -15px hsl(213 40% 12% / 0.12);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .dark {
+    --background: 213 60% 6%;
+    --foreground: 213 20% 92%;
+    --card: 213 50% 10%;
+    --card-foreground: 213 20% 92%;
+    --popover: 213 60% 6%;
+    --popover-foreground: 213 20% 92%;
+    --primary: 213 94% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 45 100% 51%;
+    --secondary-foreground: 213 40% 12%;
+    --muted: 213 40% 15%;
+    --muted-foreground: 213 15% 55%;
+    --accent: 45 100% 51%;
+    --accent-foreground: 213 40% 12%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 213 40% 16%;
+    --input: 213 40% 16%;
+    --ring: 213 94% 50%;
+    --sidebar-background: 213 50% 10%;
+    --sidebar-foreground: 213 20% 92%;
+    --sidebar-primary: 213 94% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 213 40% 15%;
+    --sidebar-accent-foreground: 213 20% 92%;
+    --sidebar-border: 213 40% 16%;
+    --sidebar-ring: 213 94% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-body);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .bg-deep-blue {
+    background-color: hsl(var(--deep-blue));
+  }
+
+  .text-deep-blue-foreground {
+    color: hsl(var(--deep-blue-foreground));
+  }
+
+  .text-deep-blue-muted {
+    color: hsl(var(--deep-blue-muted));
+  }
+
+  .bg-deep-blue-card {
+    background-color: hsl(var(--deep-blue-card));
+  }
+
+  .border-deep-blue-border {
+    border-color: hsl(var(--deep-blue-border));
+  }
+
+  .grid-pattern {
+    background-image:
+      linear-gradient(hsl(var(--primary) / 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--primary) / 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  .dot-pattern {
+    background-image: radial-gradient(hsl(213 40% 25% / 0.2) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  /* Slow-panning grid pattern for Hero section */
+  .bg-grid-pan {
+    background-image:
+      linear-gradient(to right, #0571d3 1px, transparent 1px),
+      linear-gradient(to bottom, #0571d3 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-color: #EFF6FF;
+    /* 0.03 opacity on the grid lines is achieved by using the alpha channel in an rgba/hex or applying opacity to the container, 
+       but since the requirement says color #0571d3 with 0.03 opacity and base white, 
+       we'll apply the opacity directly to the background pattern via a pseudo-element or directly here using color-mix or rgba.
+       #0571d3 at 3% opacity is rgba(5, 113, 211, 0.03) */
+    background-image:
+      linear-gradient(to right, rgba(5, 113, 211, 0.03) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(5, 113, 211, 0.03) 1px, transparent 1px);
+    animation: pan-grid 60s linear infinite;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .bg-grid-pan {
+      animation-play-state: paused;
+    }
+  }
+
+  @keyframes pan-grid {
+    0% {
+      background-position: 0px 0px;
+    }
+
+    100% {
+      background-position: 40px 40px;
+    }
+  }
+}
