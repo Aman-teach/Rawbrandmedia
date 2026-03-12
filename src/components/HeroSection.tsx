@@ -1,4 +1,5 @@
 import { motion, useReducedMotion } from "framer-motion";
+import ParticleBackground from "./ParticleBackground";
 
 const easeOut = [0.0, 0.0, 0.2, 1] as const;
 
@@ -10,7 +11,8 @@ const HeroSection = () => {
     <section
       className="relative flex flex-col items-center justify-center min-h-screen w-full bg-gradient-to-br from-blue-50 via-blue-100/50 to-blue-200/30 overflow-hidden px-6 py-20 md:py-28"
     >
-
+      {/* ─── Interactive Particle Background (z-0) ─── */}
+      <ParticleBackground />
 
       {/* ─── Central Content (z-10) ─── */}
       <motion.div
