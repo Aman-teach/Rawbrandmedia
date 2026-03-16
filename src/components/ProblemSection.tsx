@@ -43,30 +43,30 @@ const problems = [
   {
     Icon: CrosshairIcon,
     number: "01",
-    title: "Unclear Positioning",
+    title: "Blurry Positioning",
     description:
-      "Your audience scrolls right past you — not because you lack expertise, but because your brand doesn't communicate what makes you different.",
+      "You're speaking to everyone, which means you're reaching no one. Without a sharp brand angle and clear ideal client, they scroll right past you and book someone else.",
   },
   {
     Icon: ShieldCrackIcon,
     number: "02",
-    title: "Weak Brand Authority",
+    title: "The Trust Problem",
     description:
-      "Your profile looks like everyone else's. No authority signals, no social proof framework, no reason for someone to trust you over the next coach.",
+      "Your Instagram profile looks like every other coach. No clear structure, no trust signals, and nothing that makes a stranger stop and think, \"This person can solve my problem.\"",
   },
   {
     Icon: ScatterIcon,
     number: "03",
-    title: "Random Content Posting",
+    title: "Content Without a System",
     description:
-      "You post when inspiration strikes, jump between topics, and hope something sticks. But hope isn't a content strategy.",
+      "You post when you feel like it, try different formats, and hope something goes viral. But without a content system, you're just wasting time.",
   },
   {
     Icon: BrokenGearIcon,
     number: "04",
-    title: "No Content System",
+    title: "Invisible Expertise",
     description:
-      "Every post feels like reinventing the wheel. Without a repeatable engine, burnout sets in fast — and your growth flatlines.",
+      "You've got the results. You've got the method. But none of that matters if the right people can't see it, feel it, and trust it fast enough to act.",
   },
 ];
 
@@ -111,15 +111,14 @@ const ProblemSection = () => {
       <div className="container mx-auto px-6 max-w-6xl relative z-10">
         <AnimateOnScroll className="max-w-3xl mb-10 md:mb-14">
           <p className="font-body font-semibold text-xs tracking-[0.25em] uppercase mb-3 text-black/50">
-            The Problem
+            THE REAL PROBLEM
           </p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold leading-[1.05] mb-4 tracking-tight text-black">
-            Expertise alone won't build your brand.
+            The coaches getting clients online aren't better than you.{" "}
+            <span className="block">They just have a better system.</span>
           </h2>
           <p className="text-sm md:text-base font-body leading-relaxed max-w-2xl text-black/65">
-            Most coaches are invisible online — not because they lack talent,
-            but because they lack the system to turn what they know into what
-            people see.
+            If your posts get ignored and your message feels unclear, the issue isn’t your authenticity. It’s the brand around it.
           </p>
         </AnimateOnScroll>
 

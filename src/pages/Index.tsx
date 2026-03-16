@@ -28,9 +28,9 @@ const Index = () => {
       <div id="services">
         <ServicesSection />
       </div>
-      <div id="content">
+      {/* <div id="content">
         <ContentExamplesSection />
-      </div>
+      </div> */}
       <div id="partners">
         <EarlyPartnerSection />
       </div>

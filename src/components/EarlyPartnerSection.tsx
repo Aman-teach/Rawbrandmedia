@@ -1,17 +1,24 @@
-import { Sparkles, ArrowRight, Check } from "lucide-react";
+import { Sparkles, ArrowRight, Check, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AnimateOnScroll } from "@/components/AnimateOnScroll";
 import { motion } from "framer-motion";
 
-const benefits = [
-  "Personal brand positioning strategy",
-  "Authority-driven content system",
-  "Early access to the RawBrand framework",
+const forYouItems = [
+  "Expert coaches ready to scale without DIY brand-building",
+  "Coaches who want quality leads, not just followers",
+  "Those committed to a done-for-you system",
+];
+
+const whatYouGet = [
+  "Done-for-you brand positioning & content strategy",
+  "24 pieces of authority content monthly",
+  "Full Instagram profile transformation",
+  "Direct access & early-partner rates",
 ];
 
 const EarlyPartnerSection = () => {
   return (
-    <section className="py-28 md:py-36 bg-background relative overflow-hidden">
+    <section className="py-20 md:py-28 bg-background relative overflow-hidden">
       <div className="container mx-auto px-6 max-w-6xl">
         <AnimateOnScroll>
           {/* Elevated off-white container */}
@@ -29,8 +36,8 @@ const EarlyPartnerSection = () => {
             {/* Subtle secondary gradient accent in bottom-left */}
             <div className="absolute bottom-0 left-0 w-[40%] h-[35%] bg-gradient-to-tr from-secondary/[0.03] via-transparent to-transparent pointer-events-none" />
 
-            <div className="relative z-10 p-10 md:p-14 lg:p-20">
-              <div className="flex flex-col lg:flex-row items-start lg:items-center gap-12 lg:gap-16">
+            <div className="relative z-10 p-8 md:p-12 lg:p-16">
+              <div className="flex flex-col lg:flex-row items-start lg:items-center gap-10 lg:gap-14">
                 {/* ─── Left Column: Content ─── */}
                 <div className="flex-1 min-w-0">
                   {/* Badge */}
@@ -42,27 +49,36 @@ const EarlyPartnerSection = () => {
                   </div>
 
                   {/* Headline */}
-                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground leading-[1.08] mb-6 tracking-tight">
-                    Early Partner Program.
+                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground leading-[1.08] mb-2 tracking-tight">
+                    The Early Partner Program.
                   </h2>
+                  <p className="text-2xl md:text-3xl font-display font-bold text-foreground/70 leading-[1.1] mb-6 tracking-tight">
+                    5 Spots. Real Results. No Hype.
+                  </p>
 
                   {/* Supporting paragraph */}
-                  <p className="text-muted-foreground text-lg font-body leading-relaxed mb-4 max-w-xl">
-                    We are partnering with a small group of ambitious coaches who
-                    want to build authority brands before their niche becomes
-                    crowded. Early partners work with us while we document the
-                    process and turn the results into flagship case studies.
+                  <p className="text-muted-foreground font-body text-[15px] leading-relaxed max-w-2xl mb-6">
+                    You get a complete done-for-you brand system at early-partner rates. I document your success, build case studies, and refine the system at scale. It's direct, honest, and designed to deliver measurable results.
                   </p>
 
-                  {/* Qualification statement */}
-                  <p className="text-muted-foreground/80 font-body text-[15px] leading-relaxed max-w-xl mb-8 italic">
-                    This program is designed for coaches who are ready to invest
-                    in a structured content system and show up consistently.
-                  </p>
+                  {/* This is for you if */}
+                  <p className="font-body font-semibold text-sm text-foreground mb-2.5">This is for you if:</p>
+                  <ul className="space-y-2 mb-7">
+                    {forYouItems.map((item) => (
+                      <li
+                        key={item}
+                        className="flex items-start gap-3 text-muted-foreground font-body text-[15px]"
+                      >
+                        <ChevronRight className="w-4 h-4 text-primary/60 flex-shrink-0 mt-0.5" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
 
-                  {/* Benefit bullets */}
-                  <ul className="space-y-3 mb-10">
-                    {benefits.map((benefit) => (
+                  {/* What you get */}
+                  <p className="font-body font-semibold text-sm text-foreground mb-2.5">What you get:</p>
+                  <ul className="space-y-2.5 mb-7">
+                    {whatYouGet.map((benefit) => (
                       <li
                         key={benefit}
                         className="flex items-center gap-3 text-foreground font-body text-[15px]"
@@ -75,21 +91,28 @@ const EarlyPartnerSection = () => {
                     ))}
                   </ul>
 
+                  <p className="text-primary font-display font-bold text-base mb-6">Only 5 spots available.</p>
+
                   {/* CTA */}
-                  <Button variant="hero" size="xl" className="group" asChild>
+                  <Button variant="hero" size="lg" className="group" asChild>
                     <a
-                      href="#contact"
+                      href="https://calendly.com/amank420835/30min"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="inline-flex items-center gap-2"
                     >
-                      Apply to Join
+                      Let's Connect
                       <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </a>
                   </Button>
+                  <p className="mt-2 text-muted-foreground/70 font-body text-[13px]">
+                    Quick chat to see if we're aligned.
+                  </p>
                 </div>
 
                 {/* ─── Right Column: 5 Spots Left Visual ─── */}
                 <div className="hidden lg:flex items-center justify-center flex-shrink-0">
-                  <div className="relative w-64 h-64">
+                  <div className="relative w-56 h-56">
                     {/* Animated stacked cards behind */}
                     <motion.div
                       className="absolute inset-0 rounded-3xl border border-primary/10"

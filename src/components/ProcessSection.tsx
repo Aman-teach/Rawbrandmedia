@@ -61,7 +61,7 @@ const ProcessSection = () => {
                   </p>
                   <p className="text-primary-foreground/60 font-body text-sm mt-2">No contracts. Honest conversations first.</p>
                 </div>
-                <a href="#contact" className="inline-block bg-primary-foreground text-foreground font-display text-lg tracking-wider px-8 py-4 hover:bg-primary-foreground/90 transition-colors">
+                <a href="https://calendly.com/amank420835/30min" target="_blank" rel="noopener noreferrer" className="inline-block bg-primary-foreground text-foreground font-display text-lg tracking-wider px-8 py-4 hover:bg-primary-foreground/90 transition-colors">
                   START NOW
                 </a>
               </div>

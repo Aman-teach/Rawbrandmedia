@@ -7,37 +7,37 @@ const services = [
   {
     num: "01",
     title: "Positioning",
-    text: "We distill what makes you different into a razor-sharp brand angle. You never blend in with the noise again.",
+    text: "Your brand angle is defined and locked in. Every piece of content supports that message so people quickly understand what you stand for.",
     icon: Target,
   },
   {
     num: "02",
     title: "Strategy",
-    text: "Strategic content pillars and messaging themes mapped to your buyer's journey. Every post moves them closer to booking a call.",
+    text: "We study the top creators and best-performing content in your niche, then build content pillars that guide people from discovering you to trusting you and eventually becoming clients.",
     icon: LayoutGrid,
   },
   {
     num: "03",
     title: "Scripting",
-    text: "Hooks that stop the scroll. Scripts that showcase your expertise. Engineered to position you as the authority in your niche.",
+    text: "Using research and what we learn about your business, we script a full month of short-form content around your voice and methodology.",
     icon: Film,
   },
   {
     num: "04",
     title: "Editing",
-    text: "We turn your raw footage into polished, scroll-worthy Instagram reels. Clean cuts, on-brand visuals, and cinematic pacing.",
+    text: "Once you send the raw clips, we edit them into polished, on-brand short-form videos for your brand.",
     icon: Scissors,
   },
   {
     num: "05",
-    title: "Formatting",
-    text: "Captions that hook, educate, and convert. We use strategic CTAs keeping your audience reading to the last line.",
+    title: "Publishing",
+    text: "24 posts go live every month. Your brand stays active without you managing it.",
     icon: Type,
   },
   {
     num: "06",
-    title: "Publishing",
-    text: "Your content goes live like clockwork. 24 pieces per month, published at optimal times. You show up consistently without lifting a finger.",
+    title: "Analysis",
+    text: "We review performance data and refine future content based on what works best, and send you a simple report.",
     icon: Calendar,
   },
 ];
@@ -45,14 +45,14 @@ const services = [
 const IntroPanel = () => (
   <div className="w-screen flex-shrink-0 flex flex-col justify-center px-8 md:px-24 h-full">
     <p className="text-primary font-body font-bold text-xs tracking-[0.25em] uppercase mb-6">
-      THE CONTENT PIPELINE
+      WHAT DONE-FOR-YOU ACTUALLY LOOKS LIKE
     </p>
     <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-black text-foreground tracking-tighter leading-[0.95] mb-6">
-      A complete content system,{" "}
-      <span className="text-primary">done for you.</span>
+      You Show Up.{" "}
+      <span className="text-primary">I Handle Everything Else.</span>
     </h2>
     <p className="max-w-xl text-lg md:text-xl text-muted-foreground font-body leading-relaxed mb-10">
-      We handle every layer of your Instagram content engine. You focus on coaching. Scroll to see the pipeline.
+      Here's every layer I handle inside your content engine — so you never have to think about it.
     </p>
     <div className="flex items-center gap-3 text-muted-foreground">
       <span className="text-sm font-body">Scroll to explore</span>
@@ -100,14 +100,14 @@ const MobileLayout = () => (
   <section className="bg-background py-20 px-6">
     <div className="mb-16">
       <p className="text-primary font-body font-bold text-xs tracking-[0.25em] uppercase mb-5">
-        THE CONTENT PIPELINE
+        WHAT DONE-FOR-YOU ACTUALLY LOOKS LIKE
       </p>
       <h2 className="text-4xl sm:text-5xl font-display font-black text-foreground tracking-tighter leading-[0.95] mb-5">
-        A complete content system,{" "}
-        <span className="text-primary">done for you.</span>
+        You Show Up.{" "}
+        <span className="text-primary">I Handle Everything Else.</span>
       </h2>
       <p className="max-w-xl text-lg text-muted-foreground font-body leading-relaxed">
-        We handle every layer of your Instagram content engine. You focus on coaching.
+        Here's every layer I handle inside your content engine — so you never have to think about it.
       </p>
     </div>
     <div className="space-y-6">

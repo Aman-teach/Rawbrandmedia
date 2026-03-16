@@ -25,27 +25,30 @@ const Footer = () => {
                 Media
               </span>
             </div>
+            <p className="text-muted-foreground font-body leading-relaxed text-sm italic mb-3">
+              Built for coaches who are done being invisible.
+            </p>
             <p className="text-muted-foreground font-body leading-relaxed text-sm">
-              Personal branding agency helping coaches turn their expertise into
-              authority-driven personal brands.
+              Rawbrand Media is a done-for-you personal branding studio. We build authority-driven Instagram brands for coaches from positioning to content, handled completely.
             </p>
           </div>
 
-          {/* Column 2: Pages */}
+          {/* Column 2: Navigation */}
           <div>
             <p className="font-display font-semibold text-foreground text-sm mb-5 tracking-wide uppercase">
-              Pages
+              Navigation
             </p>
             <div className="space-y-3">
               {[
                 { label: "Framework", href: "#framework" },
                 { label: "Services", href: "#services" },
-                { label: "About", href: "#founder" },
-                { label: "Contact", href: "#contact" },
-              ].map((link) => (
+                { label: "Proof of Work", href: "#proof" },
+                { label: "Contact", href: "https://calendly.com/amank420835/30min", external: true },
+              ].map((link: any) => (
                 <a
                   key={link.label}
                   href={link.href}
+                  {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                   className="block text-muted-foreground hover:text-foreground font-body text-sm transition-colors duration-200"
                 >
                   {link.label}
@@ -83,12 +86,13 @@ const Footer = () => {
             </p>
             <div className="space-y-3">
               {[
-                { label: "Instagram", href: "#" },
-                { label: "LinkedIn", href: "#" },
+                { label: "Instagram → @rawbrandmedia", href: "https://instagram.com/rawbrandmedia" },
               ].map((link) => (
                 <a
                   key={link.label}
                   href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="block text-muted-foreground hover:text-foreground font-body text-sm transition-colors duration-200"
                 >
                   {link.label}
@@ -103,7 +107,7 @@ const Footer = () => {
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="border-t border-border pt-6 pb-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-muted-foreground text-xs font-body">
-            © 2026 RawBrandMedia. All rights reserved.
+            © 2025 Rawbrand Media. Dive in the world of personal branding.
           </p>
           <div className="flex gap-6">
             {["Privacy Policy", "Terms of Service"].map((link) => (

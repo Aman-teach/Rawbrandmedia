@@ -2,21 +2,21 @@ import { AnimateOnScroll, StaggerContainer, StaggerItem } from "@/components/Ani
 
 const testimonials = [
   {
-    quote: "They didn't just design a logo — they helped me understand who I really am as a brand. The transformation was unlike anything I've experienced.",
-    name: "Sarah Mitchell",
-    role: "Life Coach & Speaker",
+    quote: "I'd been trying to figure out my Instagram for a year. Rawbrand built a system in two weeks that finally made sense. I actually know what to post now — and more importantly, why.",
+    name: "Coach Name",
+    role: "Niche",
     highlight: false,
   },
   {
-    quote: "Working with Rawbrand felt like having a co-founder who only cares about making you look legendary. My bookings tripled in three months.",
-    name: "Amara Osei",
-    role: "Creative Director",
+    quote: "My profile used to look like every other coach online. Now when people land on it, they DM me. That's never happened before.",
+    name: "Coach Name",
+    role: "Niche",
     highlight: true,
   },
   {
-    quote: "They showed me the best version of myself and gave me the tools to present it to the world. Authentic, warm, and wickedly strategic.",
-    name: "David Chen",
-    role: "Tech Founder",
+    quote: "The done-for-you piece is what sold me. I don't have time to be a content creator — I have clients to coach. Rawbrand handles all of it.",
+    name: "Coach Name",
+    role: "Niche",
     highlight: false,
   },
 ];
@@ -27,16 +27,16 @@ const TestimonialsSection = () => {
       <div className="container mx-auto px-6 max-w-6xl">
         <AnimateOnScroll className="text-center max-w-2xl mx-auto mb-20">
           <p className="text-primary font-body font-semibold text-sm tracking-widest uppercase mb-3">
-            Testimonials
+            WHAT EARLY PARTNERS SAY
           </p>
           <h2 className="text-5xl md:text-6xl font-display text-foreground leading-[1.1]">
-            Kind words from people we've <em className="text-primary">transformed.</em>
+            Don't Just Take My <em className="text-primary">Word For It.</em>
           </h2>
         </AnimateOnScroll>
 
         <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 gap-5" staggerDelay={0.15}>
           {testimonials.map((t) => (
-            <StaggerItem key={t.name}>
+            <StaggerItem key={t.name + t.quote.slice(0, 20)}>
               <div
                 className={`rounded-2xl p-9 flex flex-col justify-between h-full transition-all duration-500 hover:scale-[1.02] ${
                   t.highlight

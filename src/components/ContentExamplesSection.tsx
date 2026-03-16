@@ -72,11 +72,10 @@ const ContentExamplesSection = () => {
             Content That Builds Authority
           </p>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-deep-blue-foreground leading-[1.05] tracking-tight mb-6">
-            Short-form content that{" "}
-            <span className="text-secondary">positions you as the expert.</span>
+            Short-form content that positions you as the expert.
           </h2>
           <p className="text-deep-blue-muted text-lg font-body leading-relaxed">
-            Every reel we create is built to make your audience think, trust, and take action — not just double-tap and scroll.
+            Every reel we create is built to make your audience think, trust, and take action not just double-tap and scroll.
           </p>
         </AnimateOnScroll>
       </div>

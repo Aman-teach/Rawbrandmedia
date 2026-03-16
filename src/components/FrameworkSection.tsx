@@ -39,33 +39,33 @@ const ExecuteIcon = ({ className }: { className?: string }) => (
 const steps = [
   {
     number: "01",
-    title: "Brand Discovery",
+    title: "Brand Foundation",
     icon: DiscoveryIcon,
-    text: "We uncover the raw material that makes your story unforgettable.",
+    text: "Before a single word gets written or a reel gets made, we go deep and understand your story, your method, your voice, and your edge. This is where your brand stops sounding like everyone else's.",
   },
   {
     number: "02",
-    title: "Positioning",
+    title: "Strategic Positioning",
     icon: AnglesIcon,
-    text: "We craft a sharp angle so your ideal clients feel you are speaking only to them.",
+    text: "I clarify your audience, your problem space, and your unique coaching angle. This gives your brand a clear position that builds real connection with clients and dream followers.",
   },
   {
     number: "03",
     title: "Authority Profile",
     icon: AuthorityIcon,
-    text: "We rebuild your profile into a machine that converts followers into clients.",
+    text: "Your Instagram bio, highlights, and profile get rebuilt from scratch into a conversion machine. First impressions now work for you, not against you.",
   },
   {
     number: "04",
-    title: "System Design",
+    title: "Content System Design",
     icon: EngineIcon,
-    text: "We architect a content engine so every post compounds your authority.",
+    text: "I define three core content pillars and build a monthly posting structure around them. You always know what to talk about, how it connects to your brand, and how it attracts the right clients.",
   },
   {
     number: "05",
     title: "Flywheel Execution",
     icon: ExecuteIcon,
-    text: "The engine goes live. We produce and publish 24 authority pieces monthly.",
+    text: "Every month, you record the ideas. We edit, package, and publish 24 pieces of authentic content for your brand.",
   },
 ];
 
@@ -152,14 +152,15 @@ const DesktopMorphingCore = () => {
         {/* Fixed Header */}
         <div className="absolute top-16 md:top-24 left-0 right-0 z-50 text-center px-6 pointer-events-none">
           <p className="text-primary font-body font-bold text-xs tracking-[0.25em] uppercase mb-3 text-shadow-sm">
-            OUR FRAMEWORK
+            THE RAWBRAND SYSTEM
           </p>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-black text-foreground tracking-tighter leading-[0.95] drop-shadow-md">
-            The Raw Personal Brand{" "}
-            <span className="text-primary">System.</span>
+            One System. Built Around{" "}
+            <span className="text-primary">You.</span>
+            <span className="block mt-1">From Unknown to Undeniable.</span>
           </h2>
           <p className="mt-3 max-w-xl mx-auto text-base md:text-lg text-muted-foreground font-body leading-relaxed drop-shadow-sm">
-            Five deliberate steps that take you from posting randomly to building a brand people remember, trust, and buy from.
+            The best personal brands don’t grow from random posts. They grow from clear systems.
           </p>
         </div>
 
@@ -179,14 +180,14 @@ const MobileLayout = () => (
   <section className="bg-background py-20 px-6 overflow-hidden" id="framework">
     <div className="text-center mb-16">
       <p className="text-primary font-body font-bold text-xs tracking-[0.25em] uppercase mb-4">
-        OUR FRAMEWORK
+        THE RAWBRAND SYSTEM
       </p>
       <h2 className="text-4xl sm:text-5xl font-display font-black text-foreground tracking-tighter leading-[0.95] mb-4">
-        The Raw Personal Brand{" "}
-        <span className="text-primary">System.</span>
+        One System. Built Around{" "}
+        <span className="text-primary">You.</span>
       </h2>
       <p className="max-w-xl mx-auto text-lg text-muted-foreground font-body leading-relaxed">
-        Five deliberate steps that take you from posting randomly to building a brand people remember, trust, and buy from.
+        The best personal brands don’t grow from random posts. They grow from clear systems.
       </p>
     </div>
     <div className="space-y-6 max-w-md mx-auto flex flex-col items-center justify-center">
