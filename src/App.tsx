@@ -3,6 +3,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 import AnimatedRoutes from "./components/AnimatedRoutes";
 import { useScrollToTop } from "./hooks/useScrollToTop";
 import StaggeredMenu from "@/components/MenuFolder/StaggeredMenu";
@@ -49,6 +50,7 @@ const App = () => (
           <AnimatedRoutes />
         </MenuOverlayProvider>
       </BrowserRouter>
+      <Analytics />
     </TooltipProvider>
   </QueryClientProvider>
 );
